@@ -1,0 +1,39 @@
+{
+  "name": "dynare-model-language",
+  "displayName": "Dynare Model Language Support",
+  "description": "Syntax highlighting for Dynare model files",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nuvolos-cloud/dynare-model-language"
+  },
+  "engines": {
+    "vscode": "^1.43.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "dynare",
+        "aliases": [
+          "Dynare",
+          "dynare"
+        ],
+        "extensions": [
+          ".mod",
+          ".dyn"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "dynare",
+        "scopeName": "source.dynare",
+        "path": "./syntaxes/dynare_textmate.json"
+      }
+    ]
+  }
+}
