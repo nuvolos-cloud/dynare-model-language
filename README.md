@@ -2,6 +2,8 @@
 
 This is a Visual Studio Code extension for the Dynare model language. It provides syntax highlighting for the Dynare model language.
 
+![Screenshot 2024-12-18 at 14 56 37](https://github.com/user-attachments/assets/c5ef2d48-d851-4b84-806b-d894d37261e7)
+
 ## Release Notes
 
 ### 0.2.0
