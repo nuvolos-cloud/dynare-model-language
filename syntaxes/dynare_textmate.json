@@ -67,7 +67,7 @@
             "patterns": [
                 {
                     "name": "keyword.control.preprocessor.dynare",
-                    "match": "@#(ifndef|ifdef|else|elseif|endif|define|include|undef)\\b"
+                    "match": "@#(if|ifndef|ifdef|else|elseif|endif|define|include|undef)\\b"
                 }
             ]
         },
@@ -111,7 +111,10 @@
                         },
                         {
                             "include": "#comments"
-                        }
+                        },
+                        {
+                            "include": "#preprocessor-directives"
+                        }                
                     ]
                 }
             ]
