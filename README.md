@@ -4,6 +4,13 @@ This is a Visual Studio Code extension for the Dynare model language. It provide
 
 ## Release Notes
 
+### 0.2.0
+
+Improved syntax highlighting for:
+ * string literals,
+ * Dynare blocks,
+ * Dynare statements in blocks
+
 ### 0.1.1
 
 Added support for preprocessor blocks and updated the list of highlighted keywords:
