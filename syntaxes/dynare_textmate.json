@@ -67,7 +67,7 @@
             "patterns": [
                 {
                     "name": "keyword.control.preprocessor.dynare",
-                    "match": "@#(if|ifndef|ifdef|else|elseif|endif|define|include|undef)\\b"
+                    "match": "@#\\s*(ifndef|ifdef|else|elseif|endif|define|include|undef|if)\\b"
                 }
             ]
         },
