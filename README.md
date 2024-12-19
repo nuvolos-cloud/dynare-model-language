@@ -6,6 +6,10 @@ This is a Visual Studio Code extension for the Dynare model language. It provide
 
 ## Release Notes
 
+### 0.3.0
+
+ * PR #1: Allow for macro directives in blocks, additional keywords. Thank you @JohannesPfeifer for the contribution!
+
 ### 0.2.1
 
 Added support for whitespace after the `@#` preprocessor directive.
