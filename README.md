@@ -6,6 +6,10 @@ This is a Visual Studio Code extension for the Dynare model language. It provide
 
 ## Release Notes
 
+### 0.2.1
+
+Added support for whitespace after the `@#` preprocessor directive.
+
 ### 0.2.0
 
 Improved syntax highlighting for:
