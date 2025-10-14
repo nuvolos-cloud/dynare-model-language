@@ -6,6 +6,24 @@ This is a Visual Studio Code extension for the Dynare model language. It provide
 
 ## Release Notes
 
+### 0.4.0
+
+* Added missing block keywords: `epilogue` and `perfect_foresight_controlled_paths` for proper block recognition.
+* Introduced a new function-keywords category. Built-ins are highlighted as support.function.builtin.dynare:
+    * Mathematical: exp, log, ln, log10, sin, cos, tan, asin, acos, atan, sinh, cosh, tanh, asinh, acosh, atanh, sqrt, cbrt, max, min, abs, sign
+    * Statistical: normcdf, normpdf, erf, erfc
+    * Dynare special: steady_state, expectation, var_expectation, pac_expectation
+    * Note: Greek*letter functions keep the existing keyword.function.dynare class.
+* Large update to statement-level keywords (hundreds added from the lexer):
+    * Core additions: prior_function, posterior_function, epilogue, perfect_foresight_controlled_paths
+    * Extensive option keywords, including solver, simulation, likelihood, smoother, MCMC (mh_*), particle filters, identification, method-of-moments, BVAR, homotopy, occbin, and linear solver options.
+    * Block*specific additions: values, scales, cutoff, static_mfs, heterogeneity, surprise, bind/relax/error_bind/error_relax, restriction/component/target/auxname, weights/exogenize/endogenize, etc.
+    * Data/file and output options: file, dirname, datafile, filename, xls_sheet, xls_range, series, output_file_tag, file_tag, simulation_file_tag.
+    * Distribution keywords: gamma_pdf, beta_pdf, normal_pdf, inv_gamma_pdf, inv_gamma1_pdf, inv_gamma2_pdf, uniform_pdf, weibull_pdf.
+    * Time and frequency keywords: monthly, quarterly, qoq, yoy, aoa, freq, initial_year/subperiod, final_year/subperiod.
+    * Advanced and feature flags: use_dll, block, bytecode, all_values_required, no_static, differentiate_forward_vars, parallel_local_files, 
+
+
 ### 0.3.0
 
  * PR #1: Allow for macro directives in blocks, additional keywords. Thank you @JohannesPfeifer for the contribution!
